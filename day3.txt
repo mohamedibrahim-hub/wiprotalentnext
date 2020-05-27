@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner s= new Scanner(System.in);
+        String low="";
+        String high="";
+        char[]a= s.next().toCharArray();
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>='A'&& a[i]<='z')
+            {
+                high=high+a[i];
+
+            }
+            else
+            {
+                low=low+a[i];
+
+            }
+        }
+        String result=low+high;
+        System.out.println(result);
+    }
+}
